@@ -9,7 +9,7 @@ sources:
   - name: Baseball Reference
     abbrv: bref
     player_link: http://www.baseball-reference.com/pl/player_search.cgi?search=
-    mlb_team_link: http://www.baseball-reference.com/pl/player_search.cgi?search=
+    mlb_team_link: http://www.baseball-reference.com/pl/player_search.cgi?search= 
 
   - name: Fangraphs
     abbrv: fg
@@ -18,33 +18,33 @@ sources:
 
 teams:
   mlb:
-    - Angels 
-    - Astros 
-    - Athletics 
-    - Blue Jays 
-    - Braves 
-    - Brewers 
-    - Cardinals 
-    - Cubs 
-    - Diamondbacks 
-    - Dodgers 
-    - Giants 
-    - Indians 
-    - Mariners 
-    - Marlins 
-    - Mets 
-    - Nationals 
-    - Orioles 
-    - Padres 
-    - Phillies 
-    - Pirates 
-    - Rangers 
-    - Rays 
-    - Red Sox 
-    - Reds 
-    - Rockies 
-    - Royals 
-    - Tigers 
-    - Twins 
-    - White Sox 
-    - Yankees
+    - angels 
+    - astros 
+    - athletics 
+    - blue jays 
+    - braves 
+    - brewers 
+    - cardinals 
+    - cubs 
+    - diamondbacks 
+    - dodgers 
+    - giants 
+    - indians 
+    - mariners 
+    - marlins 
+    - mets 
+    - nationals 
+    - orioles 
+    - padres 
+    - phillies 
+    - pirates 
+    - rangers 
+    - rays 
+    - red sox 
+    - reds 
+    - rockies 
+    - royals 
+    - tigers 
+    - twins 
+    - white sox 
+    - yankees
