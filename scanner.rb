@@ -90,8 +90,12 @@ module BaseOnBot
               posted = arr.any? do |a|
                 a['data']['author'].downcase() == 'baseonbot'
               end
+
+              break if posted == true
             end
           end
+
+          break if posted == true
         end
       rescue Exception => e
         posted = false
@@ -167,7 +171,7 @@ module BaseOnBot
       end
 
       # Build our reply
-      joined = replies.join(", ")
+      joined = replies.uniq.join(", ")
       "Here's some clicky goodness for you:\n\n#{joined}"
     end #- build_reply()
 
