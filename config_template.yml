@@ -1,0 +1,50 @@
+# Fill out missing config values
+# Rename to config.yml
+
+reddit:
+  user: [USER]
+  password: [PASSWORD]
+
+sources:
+  - name: Baseball Reference
+    abbrv: bref
+    player_link: http://www.baseball-reference.com/pl/player_search.cgi?search=
+    mlb_team_link: http://www.baseball-reference.com/pl/player_search.cgi?search=
+
+  - name: Fangraphs
+    abbrv: fg
+    player_link: http://www.fangraphs.com/players.aspx?lastname=
+    mlb_team_link:
+
+teams:
+  mlb:
+    - Angels 
+    - Astros 
+    - Athletics 
+    - Blue Jays 
+    - Braves 
+    - Brewers 
+    - Cardinals 
+    - Cubs 
+    - Diamondbacks 
+    - Dodgers 
+    - Giants 
+    - Indians 
+    - Mariners 
+    - Marlins 
+    - Mets 
+    - Nationals 
+    - Orioles 
+    - Padres 
+    - Phillies 
+    - Pirates 
+    - Rangers 
+    - Rays 
+    - Red Sox 
+    - Reds 
+    - Rockies 
+    - Royals 
+    - Tigers 
+    - Twins 
+    - White Sox 
+    - Yankees
