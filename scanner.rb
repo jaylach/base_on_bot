@@ -14,7 +14,7 @@ module BaseOnBot
         item['abbrv'].downcase
       end
 
-      @comment_regex = /_([^_]+?)\s+\((#{abbrvs.join('|')})\)_/i
+      @comment_regex = /[_*]([^_*]+?)\s+\((#{abbrvs.join('|')})\)[_*]/i
     end #- initialize()
 
     # -----
@@ -63,6 +63,47 @@ module BaseOnBot
       comments
     end #- get_post_comments()
 
+    #####
+    # THIS IS A TERRIBLE HACK!!!!
+    # There I said it. I need a much better way of tracking which comments I've already replied to.
+    # Problem is, snoo does not tell me if the post failed due to throttling, so I can't just track
+    # everything I think I replied to. 
+    #
+    # It's just terrible to making all these extra requests. I hate it and I hate myself for hacking
+    # this together.. but it's working for now.
+    #
+    # BEGIN HACKS
+    #####
+
+    # already_replied?()
+    def already_replied(link_id, comment_id)
+      posted = false
+
+      begin
+        listing = @reddit.get_comments(link_id: link_id, comment_id: comment_id, limit: 100)
+        listing.each do |item|
+          children = item['data']['children'].select { |i| i['kind'] == 't1' }
+          children.each do |c|
+            replies = c['data']['replies']
+            if replies.is_a?(Hash)
+              arr = replies['data']['children']
+              posted = arr.any? do |a|
+                a['data']['author'].downcase() == 'baseonbot'
+              end
+            end
+          end
+        end
+      rescue Exception => e
+        posted = false
+      end
+
+      posted
+    end #- already_replied()
+
+    #####
+    # END HACKS
+    #####
+
     # get_all_comments()
     def get_all_comments()
       listing = @reddit.get_comments(subreddit: 'baseball', limit: 100, depth: 1000, sort: 'new')
@@ -81,17 +122,18 @@ module BaseOnBot
         id = "#{item['kind']}_#{data['id']}"
         body = data['body']
         matches = body.scan(@comment_regex)
-
+        
         if matches.length > 0
-          all_comments.push({
-            :id => id, 
-            :reply => build_reply(matches)
-          })
-        end
+          sleep 2
+          link_id = data['link_id'].slice(3, data['link_id'].length)
+          posted = already_replied(link_id, data['id'])
 
-        replies = data['replies']
-        if replies.is_a?(Hash)
-          traverse_comments replies, all_comments
+          if !posted
+            all_comments.push({
+              :id => id, 
+              :reply => build_reply(matches)
+            })
+          end
         end
       end
     end #- traverse_comments()

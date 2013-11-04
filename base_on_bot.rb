@@ -18,7 +18,6 @@ replies = scanner.get_replies()
 
 replies.each do |reply|
   sleep 3
-  # puts reply[:reply]
   puts "Replying to comment #{reply[:id]}..."
   reddit.comment reply[:reply], reply[:id]
 end
