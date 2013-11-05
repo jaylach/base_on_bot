@@ -1,0 +1,90 @@
+angels: 
+    city: l\.?a\.?|los angeles
+    abbrv: laa
+astros:
+    city: houston
+    abbrv: hou
+athletics:
+    city: oakland
+    abbrv: oak
+blue jays:
+    city: toronto
+    abbrv: tor
+braves:
+    city: atlanta
+    abbrv: atl
+brewers: 
+    city: milwaukee
+    abbrv: mil
+cardinals:
+    city: st\. louis
+    abbrv: stl
+cubs: 
+    city: chicago
+    abbrv: chc
+diamondbacks:
+    city: arizona
+    abbrv: ari
+dodgers: 
+    city: l\.?a\.?|los angeles
+    abbrv: lad
+giants: 
+    city: san francisco
+    abbrv: sfg
+indians: 
+    city: cleveland
+    abbrv: cle
+mariners: 
+    city: seattle
+    abbrv: sea
+marlins: 
+    city: miami|florida
+    abbrv: mia
+mets: 
+    city: n\.?y\.?|new york
+    abbrv: nym
+nationals: 
+    city: washington
+    abbrv: wsn
+orioles: 
+    city: baltimore
+    abbrv: bal
+padres: 
+    city: san diego
+    abbrv: sdp
+phillies: 
+    city: philadelphia
+    abbrv: phi
+pirates: 
+    city: pittsburgh
+    abbrv: pit
+rangers: 
+    city: texas
+    abbrv: texas
+rays: 
+    city: t\.?b\.?|tampa bay
+    abbrv: tbr
+red sox:
+    city: boston
+    abbrv: bos
+reds: 
+    city: cincinnati
+    abbrv: cin
+rockies:
+    city: colorado
+    abbrv: col
+royals: 
+    city: k\.?c\.?|kansas city
+    abbrv: kcr
+tigers: 
+    city: detroit
+    abbrv: det
+twins: 
+    city: minnesota
+    abbrv: min
+white sox: 
+    city: chicago
+    abbrv: chw
+yankees:
+    city: n\.?y\.?|new york
+    abbrv: nyy
