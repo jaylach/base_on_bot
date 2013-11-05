@@ -5,6 +5,8 @@ astros:
     city: houston
     abbrv: hou
 athletics:
+    other_names:
+        - as
     city: oakland
     abbrv: oak
 blue jays:
@@ -17,19 +19,23 @@ brewers:
     city: milwaukee
     abbrv: mil
 cardinals:
+    other_names:
+        - cards
     city: st\. louis
     abbrv: stl
 cubs: 
     city: chicago
     abbrv: chc
 diamondbacks:
+    other_names:
+        - dbacks
     city: arizona
     abbrv: ari
 dodgers: 
     city: l\.?a\.?|los angeles
     abbrv: lad
 giants: 
-    city: san francisco
+    city: s\.?f\.?|san francisco
     abbrv: sfg
 indians: 
     city: cleveland
@@ -44,9 +50,13 @@ mets:
     city: n\.?y\.?|new york
     abbrv: nym
 nationals: 
+    other_names:
+        - nats
     city: washington
     abbrv: wsn
 orioles: 
+    other_names:
+        - os
     city: baltimore
     abbrv: bal
 padres: 
@@ -86,5 +96,7 @@ white sox:
     city: chicago
     abbrv: chw
 yankees:
+    other_names:
+        - skankees
     city: n\.?y\.?|new york
     abbrv: nyy

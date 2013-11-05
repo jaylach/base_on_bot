@@ -16,35 +16,38 @@ sources:
     player_link: http://www.fangraphs.com/players.aspx?lastname=
     mlb_team_link:
 
+overrides:
+    - steve bartman: http://en.wikipedia.org/wiki/Steve_Bartman_incident
+
 teams:
-  mlb:
-    - angels 
-    - astros 
-    - athletics 
-    - blue jays 
-    - braves 
-    - brewers 
-    - cardinals 
-    - cubs 
-    - diamondbacks 
-    - dodgers 
-    - giants 
-    - indians 
-    - mariners 
-    - marlins 
-    - mets 
-    - nationals 
-    - orioles 
-    - padres 
-    - phillies 
-    - pirates 
-    - rangers 
-    - rays 
-    - red sox 
-    - reds 
-    - rockies 
-    - royals 
-    - tigers 
-    - twins 
-    - white sox 
-    - yankees
+    mlb:
+        - angels 
+        - astros 
+        - athletics 
+        - blue jays 
+        - braves 
+        - brewers 
+        - cardinals 
+        - cubs 
+        - diamondbacks 
+        - dodgers 
+        - giants 
+        - indians 
+        - mariners 
+        - marlins 
+        - mets 
+        - nationals 
+        - orioles 
+        - padres 
+        - phillies 
+        - pirates 
+        - rangers 
+        - rays 
+        - red sox 
+        - reds 
+        - rockies 
+        - royals 
+        - tigers 
+        - twins 
+        - white sox 
+        - yankees
