@@ -22,46 +22,13 @@ module BaseOnBot
     # -----
 
     def get_replies()
-      get_replies_needed()
+      get_all_comments()
     end
 
     # -----
     #   Private
     # -----
     private
-
-    # get_replies_needed()
-    def get_replies_needed()
-      # get_post_comments '1pnk9y'
-      get_all_comments()
-    end #- get_replies_needed()
-
-    # get_new_posts()
-    def get_new_posts()
-      listing = @reddit.get_listing(subreddit: 'baseball', page: 'new', limit: 100)['data']['children']
-      posts = Array.new()
-
-      listing.each do |item|
-        if item['data']['num_comments'] > 0
-          post_id = item['data']['id']
-          posts.push post_id
-        end
-      end
-
-      posts
-    end #- get_new_posts()
-
-    # get_post_comments()
-    def get_post_comments(post_id)
-      listing = @reddit.get_comments(link_id: post_id)
-      comments = Array.new()
-
-      listing.each do |item|
-        traverse_comments item, comments
-      end
-
-      comments
-    end #- get_post_comments()
 
     #####
     # THIS IS A TERRIBLE HACK!!!!
