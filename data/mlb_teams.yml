@@ -1,3 +1,4 @@
+# Standard Name
 angels: 
     city: l\.?a\.?|los angeles
     abbrv: laa
@@ -5,8 +6,6 @@ astros:
     city: houston
     abbrv: hou
 athletics:
-    other_names:
-        - as
     city: oakland
     abbrv: oak
 blue jays:
@@ -19,16 +18,12 @@ brewers:
     city: milwaukee
     abbrv: mil
 cardinals:
-    other_names:
-        - cards
     city: st\. louis
     abbrv: stl
 cubs: 
     city: chicago
     abbrv: chc
 diamondbacks:
-    other_names:
-        - dbacks
     city: arizona
     abbrv: ari
 dodgers: 
@@ -50,13 +45,9 @@ mets:
     city: n\.?y\.?|new york
     abbrv: nym
 nationals: 
-    other_names:
-        - nats
     city: washington
     abbrv: wsn
 orioles: 
-    other_names:
-        - os
     city: baltimore
     abbrv: bal
 padres: 
@@ -96,7 +87,24 @@ white sox:
     city: chicago
     abbrv: chw
 yankees:
-    other_names:
-        - skankees
+    city: n\.?y\.?|new york
+    abbrv: nyy
+# Nick names
+as:
+    city: oakland
+    abbrv: oak
+cards:
+    city: st\. louis
+    abbrv: stl
+dbacks:
+    city: arizona
+    abbrv: ari
+nats: 
+    city: washington
+    abbrv: wsn
+os: 
+    city: baltimore
+    abbrv: bal
+skankees:
     city: n\.?y\.?|new york
     abbrv: nyy
