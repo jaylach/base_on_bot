@@ -164,14 +164,14 @@ module BaseOnBot
           if link != nil 
             link = link + term.gsub(' ', '+')
 
-            reply = "[#{term} @ #{raw_source['name']}](#{link})"
+            reply = "> [#{term} @ #{raw_source['name']}](#{link})  "
             replies.push reply
           end
         end
       end
 
       # Build our reply
-      joined = replies.uniq.join(", ")
+      joined = replies.uniq.join("\n\n")
       "Here's some clicky goodness for you:\n\n#{joined}"
     end #- build_reply()
 
